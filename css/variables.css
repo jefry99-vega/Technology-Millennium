@@ -1,0 +1,14 @@
+/* Variables y fondos profesionales (Unsplash) */
+:root{
+  --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Imágenes de fondo profesionales (Unsplash) */
+  --hero-bg: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1600&q=80');
+  --about-bg: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');
+  --services-bg: url('https://images.unsplash.com/photo-1504384764586-bd8b0a6f2aa8?auto=format&fit=crop&w=1600&q=80');
+  --portfolio-bg: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1600&q=80');
+  --contact-bg: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80');
+
+  --overlay-color: rgba(8,15,26,0.55);
+  --accent: #4f46e5;
+}

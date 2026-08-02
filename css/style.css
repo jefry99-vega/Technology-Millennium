@@ -1,0 +1,45 @@
+/* Estilos básicos y uso de fondos profesionales */
+@import 'variables.css';
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-family);color:#fff;background:#071022;line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:60px 20px}
+
+/* Header */
+.site-header{position:fixed;top:0;left:0;right:0;background:linear-gradient(to bottom, rgba(7,16,34,0.75), rgba(7,16,34,0.4));backdrop-filter:blur(6px);z-index:50}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
+.logo{font-weight:700;letter-spacing:0.5px}
+.nav-links{display:flex;gap:18px;list-style:none}
+.nav-links a{color:#e6eef8;text-decoration:none}
+.btn-quote{background:var(--accent);color:#fff;padding:10px 14px;border-radius:6px;text-decoration:none}
+
+/* Hero */
+.hero{min-height:84vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px;background-image:var(--hero-bg);background-size:cover;background-position:center;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:var(--overlay-color)}
+.hero-content{position:relative;z-index:2;max-width:900px}
+.hero h1{font-size:2.4rem;margin-bottom:14px}
+.hero p{opacity:0.95;margin-bottom:22px}
+.btn{background:var(--accent);padding:12px 18px;border-radius:8px;color:#fff;text-decoration:none;margin-right:10px}
+.btn-outline{background:transparent;border:2px solid rgba(255,255,255,0.12)}
+
+/* Sections with backgrounds */
+.has-bg{background-size:cover;background-position:center;position:relative;padding:140px 0}
+.has-bg::after{content:'';position:absolute;inset:0;background:var(--overlay-color)}
+.has-bg .container{position:relative;z-index:2}
+.about-bg{background-image:var(--about-bg)}
+.services-bg{background-image:var(--services-bg)}
+.portfolio-bg{background-image:var(--portfolio-bg)}
+.contact-bg{background-image:var(--contact-bg)}
+
+.section h2{font-size:2rem;margin-bottom:16px}
+.services-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;list-style:none}
+.services-list li{background:rgba(255,255,255,0.06);padding:14px;border-radius:8px}
+
+/* Footer */
+.site-footer{padding:30px 20px;background:#031025;text-align:center}
+
+/* Responsive */
+@media (max-width:800px){
+  .nav-links{display:none}
+  .hero h1{font-size:1.6rem}
+  .container{padding:40px 20px}
+}
